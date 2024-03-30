@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { GridHome } from './components/grid-home'
 import { Sidebar } from './components/sidebar'
 import kaue from '@/assets/kaue.jpg'
+import { Grid } from './components/grid'
 
 export default function Home() {
   return (
@@ -25,6 +26,12 @@ export default function Home() {
             mollitia iure dolore.
           </p>
         </article>
+      </section>
+      <section className="pt-48 lg:col-span-6">
+        <h1 className="pb-16 text-end text-2xl font-bold uppercase text-primary">
+          Galeria de Tattos
+        </h1>
+        <Grid />
       </section>
     </main>
   )
