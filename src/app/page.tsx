@@ -3,6 +3,8 @@ import { GridHome } from './components/grid-home'
 import { Sidebar } from './components/sidebar'
 import kaue from '@/assets/kaue.jpg'
 import { Grid } from './components/grid'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -27,11 +29,16 @@ export default function Home() {
           </p>
         </article>
       </section>
-      <section className="pt-48 lg:col-span-6">
+      <section className="flex flex-col pt-48 lg:col-span-6">
         <h1 className="pb-16 text-end text-2xl font-bold uppercase text-primary">
           Galeria de Tattos
         </h1>
         <Grid />
+        <Button className="mx-auto mt-12 h-24 w-96 text-2xl uppercase">
+          <Link href={'https://instagram.com/kaue_grohl'} target="_blank">
+            Acessar Instagram
+          </Link>
+        </Button>
       </section>
     </main>
   )
