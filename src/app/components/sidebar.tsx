@@ -51,7 +51,7 @@ export function Sidebar() {
       <section className="flex items-center justify-between gap-2 pb-8 uppercase lg:flex-col lg:items-start lg:justify-normal lg:pb-0">
         <aside>
           <Link href={'/'}>
-            <h1 className="text-wrap text-2xl font-bold text-primary lg:pb-8">
+            <h1 className="text-wrap text-2xl font-bold capitalize tracking-widest text-primary lg:pb-8">
               Kaue Grohl
             </h1>
           </Link>

@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+// eslint-disable-next-line camelcase
+import { New_Rocker } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const newRocker = New_Rocker({
+  subsets: ['latin'],
+  weight: '400',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${inter.className} bg-slate-950 text-slate-50 antialiased`}
+        className={`${newRocker.className} bg-black text-slate-50 antialiased`}
       >
         {children}
       </body>
