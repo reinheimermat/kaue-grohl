@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll-wrapper {
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-section {
+    scroll-snap-align: start;
+}
