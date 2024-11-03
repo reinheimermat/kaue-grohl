@@ -1,3 +1,5 @@
+'use client'
+
 import {
   useCallback,
   useEffect,
@@ -6,7 +8,7 @@ import {
   type HTMLAttributes,
   type ReactNode,
 } from 'react'
-import Context, { CarModel } from './context'
+import { CarModel, Context } from './context'
 import { useModel } from './use-model'
 
 interface ModelsSectionProps extends HTMLAttributes<HTMLDivElement> {
@@ -15,7 +17,7 @@ interface ModelsSectionProps extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode
 }
 
-const ModelsWrapper = ({ children }: { children: ReactNode }) => {
+export const ModelsWrapper = ({ children }: { children: ReactNode }) => {
   const wrapperRef = useRef<HTMLDivElement>(null)
 
   const [registeredModels, setRegisteredModels] = useState<CarModel[]>([])
@@ -66,7 +68,7 @@ const ModelsWrapper = ({ children }: { children: ReactNode }) => {
   )
 }
 
-const ModelsSection = ({
+export const ModelsSection = ({
   children,
   modelname,
   overlaynode,

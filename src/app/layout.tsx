@@ -1,21 +1,21 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
 
 const inter = Inter({
-  display: "swap",
-  subsets: ["latin"],
+  display: 'swap',
+  subsets: ['latin'],
 })
 
 export const metadata: Metadata = {
-  title: "Kaue Grohl",
+  title: 'Kaue Grohl',
   description: "Kaue Grohl's personal website",
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="pt-br">
@@ -25,5 +25,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }

@@ -1,32 +1,31 @@
-import { DefaultOverlayContent } from "@/components/slider/default-overlay-content";
-import { Model } from "@/components/slider/model";
-import testImage from "../../public/test.jpeg"
-import Image from "next/image";
+import { DefaultOverlayContent } from '@/components/slider/default-overlay-content'
+import { Model } from '@/components/slider/model'
+import Image from 'next/image'
+import testImage from '../../public/test.jpeg'
 
 const SlideImages = [
   {
     id: 1,
-    label: "Model One",
+    label: 'Model One',
     img: testImage,
-    description: "Order Online for delivery 1",
+    description: 'Order Online for delivery 1',
   },
   {
     id: 2,
-    label: "Model Two",
+    label: 'Model Two',
     img: testImage,
-    description: "Order Online for delivery 2",
+    description: 'Order Online for delivery 2',
   },
   {
     id: 3,
-    label: "Model Three",
+    label: 'Model Three',
     img: testImage,
-    description: "Order Online for delivery 3",
-  }
+    description: 'Order Online for delivery 3',
+  },
 ]
 
 export default function Home() {
   return (
-    // todo: This is a container
     <div className="h-screen">
       <Model.Wrapper>
         <div>
@@ -47,5 +46,5 @@ export default function Home() {
         </div>
       </Model.Wrapper>
     </div>
-  );
+  )
 }
